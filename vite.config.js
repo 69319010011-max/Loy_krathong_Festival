@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/Loy_krathong_Festival/' : '/',
   plugins: [
     react(),
     tailwindcss()
